@@ -8,3 +8,9 @@
     color:#beee3a;
     font: bold;
 }
+.nav-link, .nav-btn {
+    font-weight: 700;
+    color:#beee3a;
+    font: bold;
+    text-decoration: none;
+}
