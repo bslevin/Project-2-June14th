@@ -25,5 +25,23 @@
     margin-right: auto;
     width: 10%;
     height: 45%;
-
+}
+/*set color variables for use throughout app*/
+:root {
+    --defaultGreen: #317b22;
+}
+.budget-input-form {
+    border: 0.15rem solid var(--defaultGreen);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+.budget-submit-btn {
+    background: transparent;
+    border: 0.1rem solid var(--defaultGreen);
+    color: var(--defaultGreen);
+}
+/*prevent alert boxes displaying by default*/
+.budget-feedback-success,
+.budget-feedback-failed {
+  display: none;
 }
