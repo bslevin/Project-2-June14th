@@ -1,3 +1,7 @@
+.app-name {
+    text-transform:uppercase;
+    
+}
 .budgie-logo {
     width: 65px;
     height: 65px;
@@ -29,6 +33,12 @@
 /*set color variables for use throughout app*/
 :root {
     --defaultGreen: #317b22;
+    --defaultWhite: #f5f5f5f5;
+    --defaultDark: #333333;
+}
+body {
+    background: var(--defaultWhite);
+    color: var(--defaultDark);
 }
 .budget-input-form {
     border: 0.15rem solid var(--defaultGreen);
@@ -39,6 +49,10 @@
     background: transparent;
     border: 0.1rem solid var(--defaultGreen);
     color: var(--defaultGreen);
+}
+.budget-submit-btn:hover {
+    background: var(--defaultGreen);
+    color: var(--defaultDark);
 }
 /*prevent alert boxes displaying by default*/
 .budget-feedback-success,
