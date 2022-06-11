@@ -14,3 +14,16 @@
     font: bold;
     text-decoration: none;
 }
+.app-name {
+    text-transform:uppercase;
+    
+}
+.brian-img {
+    border-radius: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 45%;
+
+}
