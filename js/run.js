@@ -124,7 +124,15 @@ class BudgetApp {
         `
         this.expenseList.appendChild(div);
     }
-
+    // Method to calculate and set text for the Total Expense
+    totalBudgetExpense() {
+        let total = 0;
+        if (this.budgetItemList.length > 0) {
+            total = this.budgetItemList.reduce((sum, li) => sum + li.expenseValue, 0)
+        }
+        this.expenseAmount.textContent = total;
+        return total;
+    }
 }
 
 /**
