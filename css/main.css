@@ -58,7 +58,9 @@ body {
 }
 /*prevent alert boxes displaying by default*/
 .budget-feedback-success,
-.budget-feedback-failed {
+.budget-feedback-failed,
+.expense-feedback-failed,
+.expense-feedback-success {
   display: none;
 }
 .budget-input {
