@@ -30,8 +30,10 @@
     width: 10%;
     height: 45%;
 }
-/*set color variables for use throughout app*/
+/*set default color variables for use throughout app*/
 :root {
+    --defaultRed: #b80c09;
+    --defaultBlue: #05668d;
     --defaultGreen: #317b22;
     --defaultWhite: #f5f5f5f5;
     --defaultDark: #333333;
@@ -52,10 +54,30 @@ body {
 }
 .budget-submit-btn:hover {
     background: var(--defaultGreen);
-    color: var(--defaultDark);
+    color: var(--defaultWhite);
 }
 /*prevent alert boxes displaying by default*/
 .budget-feedback-success,
 .budget-feedback-failed {
   display: none;
+}
+.budget-input {
+border: 0.05rem solid var(--defaultGreen) !important;
+}
+.expense-input {
+border: 0.05rem solid var(--defaultRed) !important;
+}
+.expense-form {
+    border: 0.15rem solid var(--defaultRed);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+.expense-submit {
+    background: transparent;
+    border: 0.1rem solid var(--defaultRed);
+    color: var(--defaultRed);
+}
+.expense-submit:hover {
+    background: var(--defaultRed);
+    color: var(--defaultWhite);
 }
