@@ -24,6 +24,18 @@ class BudgetApp {
     }
 }
 
+/**
+ * Elements selected when DOM loaded.
+ * New instance of class also created.
+*/
+function budgetAppEventListeners() {
+    const budgetForm = document.getElementById("budget-input-form");
+    const expenseForm = document.getElementById("expense-form");
+    const expenseList = document.getElementById("expense-list");
+
+    // create new instance of BudgetApp class
+    const ba = new BudgetApp()
+}
 /**Event listener for app that fires callback function to eventListeners() 
 when all DOM elements have loaded */
 window.addEventListener('DOMContentLoaded', function(){
