@@ -128,3 +128,11 @@ font-size: 2rem;
   font-size: 2.5rem;
   color: var(--defaultBlue);
 }
+/*List items*/
+.list-item {
+flex: 0 0 33.33%;
+text-align: center;
+}
+.expense-item {
+height: 2rem;
+}
