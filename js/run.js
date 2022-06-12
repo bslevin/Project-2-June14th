@@ -22,6 +22,36 @@ class BudgetApp {
       this.amountInput = document.getElementById("amount-input");
       this.expenseList = document.getElementById("expense-list");
     }
+    // Custom class methods
+    /**
+     * addBudgetAmount() method.
+     * Method to add total budget amount.
+     * Must be a positive amount.
+     * Must not be null.
+     * Timeout displays for 3 seconds then dissapears */ 
+     addBudgetAmount() {
+        const value = this.budgetInput.value;
+        if (value === '' || value < 1) {
+          this.budgetFeedbackFail.classList.add("showItem");
+          this.budgetFeedbackFail.innerHTML = `<p>Budget value cannot be empty or negative, please try again!</p>`;
+          // modify variable so that setTimeout func points to the class and not global window object
+          const point = this;
+          setTimeout(function() {
+            point.budgetFeedbackFail.classList.remove('showItem')
+          }, 3000)
+        }
+        else {
+            this.budgetFeedbackSuccess.classList.add("showItem");
+            this.budgetFeedbackSuccess.innerHTML = `<p>Successfully added budget amount!</p>`;
+            const point = this;
+            setTimeout(function() {
+              point.budgetFeedbackSuccess.classList.remove('showItem')
+            }, 3000)
+            this.budgetAmount.textContent = value;
+            this.budgetInput.value = '';
+
+        }
+    }
 }
 
 /**
