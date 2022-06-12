@@ -137,6 +137,15 @@ font-size: 2rem;
   font-size: 2.5rem;
   color: var(--defaultBlue);
 }
+.showRed {
+    color: var(--defaultRed);
+}
+.showGreen {
+    color: var(--defaultGreen);
+}
+.showBlack {
+    color: var(--defaultDark);
+}
 /*List items*/
 .list-item {
 flex: 0 0 33.33%;
