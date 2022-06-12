@@ -70,6 +70,44 @@ class BudgetApp {
           this.balance.classList.add('showBlack')
         }
     }
+    // Method to submit the expense properties
+    addExpenseForm() {
+        const expenseName = this.expenseInput.value;
+        const expenseAmount = this.amountInput.value;
+        if (expenseAmount === '' || expenseName === '' || expenseAmount < 1) {
+            this.expenseFeedbackFail.classList.add('showItem');
+            this.expenseFeedbackFail.innerHTML = `<p>Expense value cannot be empty or negative, please try again!</p>`;
+            const point = this;
+            setTimeout(function() {
+            point.expenseFeedbackFail.classList.remove('showItem');
+            }, 3000)
+        }
+        else {
+            this.expenseFeedbackSuccess.classList.add('showItem');
+            this.expenseFeedbackSuccess.innerHTML = `<p>Expense item added successfully!</p>`;
+            let value = parseInt(expenseAmount);
+            
+            const point = this;
+            setTimeout(function() {
+            point.expenseFeedbackSuccess.classList.remove('showItem');
+            }, 3000)
+    
+            this.expenseInput.value = "";
+            this.amountInput.value = "";
+    
+            let expenseObj = {
+                expenseID:this.budgetItemID,
+                expenseTitle:expenseName,
+                expenseValue:value,
+            }
+    
+            this.budgetItemID++;
+            this.budgetItemList.push(expenseObj);
+            // Method to then add display balances on screen w/ expense objects as parameter
+            this.addExpenseItem(expenseObj);
+            this.showBalance();
+        }
+    }
 }
 
 /**
