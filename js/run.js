@@ -150,6 +150,23 @@ class BudgetApp {
         this.expenseInput.focus();
         this.showBalance();
     }
+    //Method to delete an expense item
+    deleteExpense(element) {
+        this.expenseFeedbackSuccess.classList.add('showItem');
+        this.expenseFeedbackSuccess.innerHTML = `<p>Expense item removed successfully!</p>`;
+        const point = this;
+        setTimeout(function() {
+          point.expenseFeedbackSuccess.classList.remove('showItem');
+        }, 3000)
+        let id = parseInt(element.dataset.id);
+        let parentEl = element.parentElement.parentElement.parentElement;
+        this.expenseList.removeChild(parentEl);
+        let tempList = this.budgetItemList.filter(function(item) {
+          return item.expenseID !== id;
+        });
+        this.budgetItemList = tempList;
+        this.showBalance();
+    }
 }
 
 /**
