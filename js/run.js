@@ -52,6 +52,24 @@ class BudgetApp {
 
         }
     }
+    // Method to display the Balance
+    showBalance() {
+        const expense = this.totalBudgetExpense();
+        const total = parseInt(this.budgetAmount.textContent) - expense;
+        this.balanceAmount.textContent = total;
+        if (total < 0) {
+          this.balance.classList.remove('showGreen', 'showBlack');
+          this.balance.classList.add('showRed')
+        }
+        else if (total > 0) {
+          this.balance.classList.remove('showGreen', 'showBlack');
+          this.balance.classList.add('showGreen')
+        }
+        else if (total === 0) {
+          this.balance.classList.remove('showGreen', 'showRed');
+          this.balance.classList.add('showBlack')
+        }
+    }
 }
 
 /**
