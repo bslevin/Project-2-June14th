@@ -122,7 +122,7 @@ class BudgetApp {
     // Method to then add display balances on screen w/ expense objects as parameter
     addExpenseItem(expenseObj) {
         const div = document.createElement('div');
-        div.classList.add('expense', 'mt-3');
+        div.classList.add('expense', 'mt-3', 'mb-3');
         div.innerHTML = `
         <div class="expense-item d-flex justify-content-between align-items-baseline">
            <h6 class="expense-title mb-0 text-uppercase list-item"><i class="fas fa-chevron-right"></i> ${expenseObj.expenseTitle}</h6>
