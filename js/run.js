@@ -149,6 +149,7 @@ function budgetAppEventListeners() {
     expenseForm.addEventListener('submit', function(event){
         // stop submit from happening on load
         event.preventDefault();
+        ba.addExpenseForm();
     })
     // create click event listener on the selected objects
     expenseList.addEventListener('click', function(event){
