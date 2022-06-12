@@ -35,7 +35,23 @@ function budgetAppEventListeners() {
 
     // create new instance of BudgetApp class
     const ba = new BudgetApp()
+
+    // create submit event listener on the selected objects
+    budgetForm.addEventListener('submit', function(event){
+    // stop default submit from happening on load
+    event.preventDefault();
+    })
+    // create submit event listener on the selected objects
+    expenseForm.addEventListener('submit', function(event){
+    // stop submit from happening on load
+    event.preventDefault();
+    })
+    // create click event listener on the selected objects
+    expenseList.addEventListener('click', function(event){
+
+    });
 }
+
 /**Event listener for app that fires callback function to eventListeners() 
 when all DOM elements have loaded */
 window.addEventListener('DOMContentLoaded', function(){
