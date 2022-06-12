@@ -94,11 +94,22 @@ class BudgetApp {
     
             this.expenseInput.value = "";
             this.amountInput.value = "";
-    
+            
+            const divisor = parseInt(this.budgetAmount.textContent);
+            const remainder = parseInt(expenseAmount);
+            let percent = 0
+            if (divisor > 0) {
+                percent = remainder/divisor*100
+            } 
+            else {
+                percent = "";
+            }
+
             let expenseObj = {
                 expenseID:this.budgetItemID,
                 expenseTitle:expenseName,
                 expenseValue:value,
+                expensePercent:percent, 
             }
     
             this.budgetItemID++;
@@ -111,16 +122,17 @@ class BudgetApp {
     // Method to then add display balances on screen w/ expense objects as parameter
     addExpenseItem(expenseObj) {
         const div = document.createElement('div');
-        div.classList.add('expense');
+        div.classList.add('expense', 'mt-3');
         div.innerHTML = `
         <div class="expense-item d-flex justify-content-between align-items-baseline">
            <h6 class="expense-title mb-0 text-uppercase list-item"><i class="fas fa-chevron-right"></i> ${expenseObj.expenseTitle}</h6>
            <h5 class="total-expense-amount mb-0 list-item">€${expenseObj.expenseValue}</h5>
            <div class="expense-icons list-item">
-            <a class="btn btn-primary edit-icon pt-2 btn-group" href="#" role="button" data-id="${expenseObj.expenseID}">Edit</a>
-            <a class="btn btn-primary delete-icon pt-2 btn-group" href="#" role="button" data-id="${expenseObj.expenseID}">Delete</a>
+            <a class="btn btn-warning edit-icon btn-group" href="#" role="button" data-id="${expenseObj.expenseID}">Edit</a>
+            <a class="btn btn-danger delete-icon btn-group" href="#" role="button" data-id="${expenseObj.expenseID}">Delete</a>
            </div>
-          </div>
+           <h5>${expenseObj.expensePercent}%</h5>
+        </div>
         `
         this.expenseList.appendChild(div);
     }
@@ -195,7 +207,12 @@ function budgetAppEventListeners() {
     })
     // create click event listener on the selected objects
     expenseList.addEventListener('click', function(event){
-
+        if (event.target.classList.contains('edit-icon')) {
+            ba.editExpense(event.target)
+          }
+          else if (event.target.classList.contains('delete-icon')) {
+            ba.deleteExpense(event.target)
+        }
     });
 }
 
