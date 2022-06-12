@@ -136,3 +136,43 @@ text-align: center;
 .expense-item {
 height: 2rem;
 }
+
+/*set media queries*/
+@media screen and (min-width: 992px) {
+    .budget {
+        font-size: 2.6rem;
+        color: var(--defaultGreen);
+    }
+    .expense {
+        font-size: 2.6rem;
+        color: var(--defaultRed);
+    }
+    .balance {
+        font-size: 2.6rem;
+    }
+    .budget-icon,
+    .expense-icon,
+    .balance-icon {
+        font-size: 2.6rem;
+        color: var(--defaultBlue);
+    }  
+}
+@media screen and (min-width: 1200px) {
+    .budget {
+      font-size: 3rem;
+      color: var(--defaultGreen);
+    }
+    .expense {
+      font-size: 3rem;
+      color: var(--defaultRed);
+    }
+    .balance {
+      font-size: 3rem;
+    }
+    .budget-icon,
+    .expense-icon,
+    .balance-icon {
+      font-size: 3rem;
+      color: var(--defaultBlue);
+    }
+}
