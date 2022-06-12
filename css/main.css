@@ -18,6 +18,15 @@
     font: bold;
     text-decoration: none;
 }
+.navbar-toggler {
+    border-color: rgb(22, 21, 22);
+    color: rgb(22, 21, 22);
+}
+/*burger menu - mobile*/
+.fa-navicon {
+    color:rgb(17, 16, 16);
+    font-size:28px;
+}
 .app-name {
     text-transform:uppercase;
     
