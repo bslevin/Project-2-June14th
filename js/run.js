@@ -133,6 +133,23 @@ class BudgetApp {
         this.expenseAmount.textContent = total;
         return total;
     }
+    // Method that accepts expense item and edits the expense item
+    editExpense(element) {
+        let id = parseInt(element.dataset.id);
+        let parentEl = element.parentElement.parentElement.parentElement;
+        this.expenseList.removeChild(parentEl);
+        let expenseItem = this.budgetItemList.filter(function(item) {
+            return item.expenseID === id;
+        });
+        this.expenseInput.value = expenseItem[0].expenseTitle;
+        this.amountInput.value = expenseItem[0].expenseValue;
+        let tempList = this.budgetItemList.filter(function(item) {
+            return item.expenseID !== id;
+        });
+        this.budgetItemList = tempList;
+        this.expenseInput.focus();
+        this.showBalance();
+    }
 }
 
 /**
