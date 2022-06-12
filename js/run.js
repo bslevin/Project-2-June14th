@@ -23,3 +23,9 @@ class BudgetApp {
       this.expenseList = document.getElementById("expense-list");
     }
 }
+
+/**Event listener for app that fires callback function to eventListeners() 
+when all DOM elements have loaded */
+window.addEventListener('DOMContentLoaded', function(){
+    budgetAppEventListeners();
+})
