@@ -148,8 +148,13 @@ font-size: 2rem;
 }
 /*List items*/
 .list-item {
-flex: 0 0 33.33%;
-text-align: center;
+    flex: 0 0 33.33%;
+    text-align: center;
+}
+.percentage {
+    font-size: 1rem;
+    flex: 0 0;
+    text-align: center;
 }
 .expense-item {
 height: 2rem;
