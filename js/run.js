@@ -49,7 +49,7 @@ class BudgetApp {
             }, 3000)
             this.budgetAmount.textContent = value;
             this.budgetInput.value = '';
-
+            this.showBalance();
         }
     }
     // Method to display the Balance
