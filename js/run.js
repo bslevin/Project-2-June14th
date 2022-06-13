@@ -11,16 +11,16 @@ class BudgetApp {
       this.budgetFeedbackSuccess = document.querySelector(".budget-feedback-success");
       this.expenseFeedbackFail = document.querySelector(".expense-feedback-failed");
       this.expenseFeedbackSuccess = document.querySelector(".expense-feedback-success");
-      this.budgetForm = document.getElementById("budget-input-form");
-      this.budgetInput = document.getElementById("budget-input");
-      this.budgetAmount = document.getElementById("total-budget-amount");
+      this.budgetAppForm = document.getElementById("budget-input-form");
+      this.budgetAppInput = document.getElementById("budget-input");
+      this.budgetAppAmount = document.getElementById("total-budget-amount");
       this.expenseAmount = document.getElementById("total-expense-amount");
       this.balance = document.getElementById("balance");
-      this.balanceAmount = document.getElementById("total-balance-amount");
-      this.expenseForm = document.getElementById("expense-form");
-      this.expenseInput = document.getElementById("expense-input");
-      this.amountInput = document.getElementById("amount-input");
-      this.expenseList = document.getElementById("expense-list");
+      this.budgetBalanceAmount = document.getElementById("total-balance-amount");
+      this.budgetExpenseForm = document.getElementById("expense-form");
+      this.budgetExpenseInput = document.getElementById("expense-input");
+      this.budgetAmountInput = document.getElementById("amount-input");
+      this.budgetExpenseList = document.getElementById("expense-list");
     }
     // Custom class methods
     /**
@@ -30,7 +30,7 @@ class BudgetApp {
      * Must not be null.
      * Timeout displays for 3 seconds then dissapears */ 
      addBudgetAmount() {
-        const value = this.budgetInput.value;
+        const value = this.budgetAppInput.value;
         if (value === '' || value < 1) {
           this.budgetFeedbackFail.classList.add("showItem");
           this.budgetFeedbackFail.innerHTML = `<p>Budget value cannot be empty or negative, please try again!</p>`;
@@ -47,16 +47,16 @@ class BudgetApp {
             setTimeout(function() {
               point.budgetFeedbackSuccess.classList.remove('showItem')
             }, 3000)
-            this.budgetAmount.textContent = value;
-            this.budgetInput.value = '';
+            this.budgetAppAmount.textContent = value;
+            this.budgetAppInput.value = '';
             this.showBalance();
         }
     }
     // Method to display the Balance
     showBalance() {
         const expense = this.totalBudgetExpense();
-        const total = parseInt(this.budgetAmount.textContent) - expense;
-        this.balanceAmount.textContent = total;
+        const total = parseInt(this.budgetAppAmount.textContent) - expense;
+        this.budgetBalanceAmount.textContent = total;
         if (total < 0) {
           this.balance.classList.remove('showGreen', 'showBlack');
           this.balance.classList.add('showRed')
@@ -72,8 +72,8 @@ class BudgetApp {
     }
     // Method to submit the expense properties
     addExpenseForm() {
-        const expenseName = this.expenseInput.value;
-        const expenseAmount = this.amountInput.value;
+        const expenseName = this.budgetExpenseInput.value;
+        const expenseAmount = this.budgetAmountInput.value;
         if (expenseAmount === '' || expenseName === '' || expenseAmount < 1) {
             this.expenseFeedbackFail.classList.add('showItem');
             this.expenseFeedbackFail.innerHTML = `<p>Expense value cannot be empty or negative, please try again!</p>`;
@@ -92,10 +92,10 @@ class BudgetApp {
             point.expenseFeedbackSuccess.classList.remove('showItem');
             }, 3000)
     
-            this.expenseInput.value = "";
-            this.amountInput.value = "";
+            this.budgetExpenseInput.value = "";
+            this.budgetAmountInput.value = "";
             
-            const divisor = parseInt(this.budgetAmount.textContent);
+            const divisor = parseInt(this.budgetAppAmount.textContent);
             const remainder = parseInt(expenseAmount);
             let percent = 0
             if (divisor > 0) {
@@ -134,7 +134,7 @@ class BudgetApp {
            <h5>${expenseObj.expensePercent}%</h5>
         </div>
         `
-        this.expenseList.appendChild(div);
+        this.budgetExpenseList.appendChild(div);
     }
     // Method to calculate and set text for the Total Expense
     totalBudgetExpense() {
@@ -149,17 +149,17 @@ class BudgetApp {
     editExpense(element) {
         let id = parseInt(element.dataset.id);
         let parentEl = element.parentElement.parentElement.parentElement;
-        this.expenseList.removeChild(parentEl);
+        this.budgetExpenseList.removeChild(parentEl);
         let expenseItem = this.budgetItemList.filter(function(item) {
             return item.expenseID === id;
         });
-        this.expenseInput.value = expenseItem[0].expenseTitle;
-        this.amountInput.value = expenseItem[0].expenseValue;
+        this.budgetExpenseInput.value = expenseItem[0].expenseTitle;
+        this.budgetAmountInput.value = expenseItem[0].expenseValue;
         let tempList = this.budgetItemList.filter(function(item) {
             return item.expenseID !== id;
         });
         this.budgetItemList = tempList;
-        this.expenseInput.focus();
+        this.budgetExpenseInput.focus();
         this.showBalance();
     }
     //Method to delete an expense item
@@ -172,7 +172,7 @@ class BudgetApp {
         }, 3000)
         let id = parseInt(element.dataset.id);
         let parentEl = element.parentElement.parentElement.parentElement;
-        this.expenseList.removeChild(parentEl);
+        this.budgetExpenseList.removeChild(parentEl);
         let tempList = this.budgetItemList.filter(function(item) {
           return item.expenseID !== id;
         });
@@ -186,27 +186,27 @@ class BudgetApp {
  * New instance of class also created.
 */
 function budgetAppEventListeners() {
-    const budgetForm = document.getElementById("budget-input-form");
-    const expenseForm = document.getElementById("expense-form");
-    const expenseList = document.getElementById("expense-list");
+    const budgetAppForm = document.getElementById("budget-input-form");
+    const budgetExpenseForm = document.getElementById("expense-form");
+    const budgetExpenseList = document.getElementById("expense-list");
 
     // create new instance of BudgetApp class
     const ba = new BudgetApp()
 
     // create submit event listener on the selected objects
-    budgetForm.addEventListener('submit', function(event){
+    budgetAppForm.addEventListener('submit', function(event){
         // stop default submit from happening on load
         event.preventDefault();
         ba.addBudgetAmount();
     })
     // create submit event listener on the selected objects
-    expenseForm.addEventListener('submit', function(event){
+    budgetExpenseForm.addEventListener('submit', function(event){
         // stop submit from happening on load
         event.preventDefault();
         ba.addExpenseForm();
     })
     // create click event listener on the selected objects
-    expenseList.addEventListener('click', function(event){
+    budgetExpenseList.addEventListener('click', function(event){
         if (event.target.classList.contains('edit-icon')) {
             ba.editExpense(event.target)
           }
