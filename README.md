@@ -71,6 +71,40 @@ Budget App Mobile
 * Create cookies so that expenses and budget can be persistent.
 
 
+## Technologies used
+
+* Balsamiq 
+   * Wireframes for UX design.
+
+* HTML
+   * HTML to complete the structure of the website.
+
+* CSS
+   *  CSS to style the website.
+
+* FontAwesome
+   * Font Awesome is a font and icon toolkit based on CSS, I added it's CDN to allow the use of icons in the project.
+
+* Google Developer Tools
+   * Used to inspect page elements and help debug issues with the website in real time.
+
+* JavaScript
+   * JS for functionality and behaviour throughout the website, event listeners, functions and main BudgetApp Class.  
+
+* Visual Studio Code
+   * VSCode used VS Code and the live server extension to code and develop this project before committing to GitHub. 
+
+* GitHub
+   * Is the repository I used to store and also where the live website is hosted.
+
+* Git 
+   * Is the version control software used to add, commit and push code to the GitHub repository.
+
+* Google Fonts
+   * font-family: 'Courgette', sans-serif used throughout this project.
+
+* Bootstrap
+   * Main Framework directed used for front-end web development.
 
 ### Surface Plane 
 
