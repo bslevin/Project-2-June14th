@@ -79,3 +79,13 @@ The steps taken to host the Budgie app live were:
 * Select 'Master/Main Branch' as the source and root folder.
 * Click the Save button.
 * Click on the link to go to the live deployed page (this may take a few moments while the page is built).
+
+
+## Credits & Acknowledgements
+
+The Budgie App was created with the help of tutorials and resources from:
+
+Images were open source.
+
+* :heart: MDP [MDP](https://mdbootstrap.com/)
+* :heart: Coding Addict [Coding Addict](https://www.youtube.com/codingaddict)
