@@ -63,6 +63,15 @@ Budget App Mobile
 ![Budget Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieBudgetMobile.png)
 
 
+
+## Features left to implement
+* Ability for user to save different budget lists for different categories.
+* Ability for a user to create saving goals.
+* Vizualizations and charts to give the user a better experience.
+* Create cookies so that expenses and budget can be persistent.
+
+
+
 ### Surface Plane 
 
 #### Colour Scheme
