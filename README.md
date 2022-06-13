@@ -128,6 +128,10 @@ Colour scheme for the website was designed to be subtle with accents of Lime Gre
 * font-family: 'Courgette', sans-serif; imported from Google Fonts used throughout.
 
 
+### Structure Plane
+
+User Story:
+
 ## Deployment
 
 #### GitHub Pages - Cloud Hosting
