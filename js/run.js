@@ -221,3 +221,5 @@ when all DOM elements have loaded */
 window.addEventListener('DOMContentLoaded', function(){
     budgetAppEventListeners();
 })
+
+/*Use and Credit for code used in this project goes to Coding Addict [Coding Addict](https://www.youtube.com/codingaddict) - John Smilga */
