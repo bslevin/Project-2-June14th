@@ -2,6 +2,8 @@
 
 ## Objective
 
+This Website was created for personal, educational, relevent times (economically difficult)
+
 ## Table of Contents
 
 - [UX & Design](#ux-&-design)
@@ -27,6 +29,20 @@
 
 
 ## UX & Design
+
+### Strategy Plane
+
+The Budgie budget app was created ....
+
+Goals:
+
+* Showcase knowledge acquired in HTML, CSS and JavaScript.
+* Give website users an interactive experience and useful budget tool.
+* Create an App that will make its users want to return on multiple visits. 
+
+#### User Stories
+
+* As a user, I want to:
 
 
 ### Skeleton Plane 
@@ -138,7 +154,6 @@ Colour scheme for the website was designed to be subtle with accents of Lime Gre
 
 ### Structure Plane
 
-User Story:
 
 ## Deployment
 
