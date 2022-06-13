@@ -61,3 +61,21 @@ Budget app Desktop
 Budget App Mobile
 
 ![Budget Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieBudgetMobile.png)
+
+
+
+
+## Deployment
+
+#### GitHub Pages - Cloud Hosting
+
+I decided to get the app hosted early in the development cycle before a lot of the code was produced.
+
+The steps taken to host the Budgie app live were:
+
+* Navigating to the GitHub Repository page.
+* Selecting the 'Settings' Tab.
+* Scroll Down to the GitHub Pages Heading on the left of the screen.
+* Select 'Master/Main Branch' as the source and root folder.
+* Click the Save button.
+* Click on the link to go to the live deployed page (this may take a few moments while the page is built).
