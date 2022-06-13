@@ -63,6 +63,26 @@ Budget App Mobile
 ![Budget Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieBudgetMobile.png)
 
 
+### Surface Plane 
+
+#### Colour Scheme
+Colour scheme for the website was designed to be subtle with accents of Lime Green to complement the Budgie theme.
+* Body: --defaultWhite: #f5f5f5;
+* Text: Lime Green #beee3a;, White #fff, Black #000000. Lime Green colour selected to match feathers of Budgie bird. 
+* Navbar: White: #fff
+* Footer: rgba(0, 0, 0, 0.2);
+
+#### Imagery
+
+* Budgie bird logo: Immediately alerts the user to the theme of the app.  
+* Body: Other images of people profiles to show the review section of the homepage.
+
+#### Iconography 
+* About page: use of fontawsome icons for LinkedIn and Github on the contact buttons leave the user in no doubt where to navigate to.
+* Mobile: on small screen form factors the burger menu has been given extra bolder detail so that the user can easily use it to access the other parts of the site.
+
+#### Typography
+* font-family: 'Courgette', sans-serif; imported from Google Fonts used throughout.
 
 
 ## Deployment
