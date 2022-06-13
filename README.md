@@ -33,8 +33,11 @@
 
 #### Wireframes
 
-Homepage Desktop & Mobile
+Homepage Desktop
 
-<img src"assets/imag/budgie - homepage.png">
+<img src"assets/img/budgieHomepage.png">
 
-<img src"assets/imag/budgie - homepage mobile.png">
+
+Homepage Mobile
+
+<img src"assets/img/budgieHomepageMobile.png">
