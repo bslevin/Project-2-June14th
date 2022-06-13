@@ -35,9 +35,9 @@
 
 Homepage Desktop
 
-<img src"assets/img/budgieHomepage.png">
+![Homepage Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieAbout.png)
 
 
 Homepage Mobile
 
-<img src"assets/img/budgieHomepageMobile.png">
+![Homepage Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieHomepageMobile.png)
