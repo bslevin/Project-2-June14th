@@ -56,27 +56,27 @@ Homepage Desktop
 
 Homepage Mobile
 
-![Homepage Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieHomepageMobile.png)
+![Homepage Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budgieHomepageMobile.png)
 
 
 About page Desktop
 
-![About Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieAbout.png)
+![About Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budgieAbout.png)
 
 
 About page Desktop
 
-![About Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieAboutMobile.png)
+![About Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budgieAboutMobile.png)
 
 
 Budget app Desktop
 
-![Budget Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieBudget.png)
+![Budget Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budgieBudget.png)
 
 
 Budget App Mobile
 
-![Budget Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieBudgetMobile.png)
+![Budget Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budgieBudgetMobile.png)
 
 
 
