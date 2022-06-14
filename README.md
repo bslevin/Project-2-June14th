@@ -2,7 +2,14 @@
 
 ## Objective
 
-This Website was created for personal, educational, relevent times (economically difficult)
+* Personal Objective
+To plan, create and develop something new using technologies I have not used before. 
+
+* Academic Objective
+To satisfy the criteria for my Code Institute course.
+
+* User Objective
+To create a web app that is user-friendly, enjoyable and useful.
 
 ## Table of Contents
 
