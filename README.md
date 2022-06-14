@@ -1,5 +1,5 @@
 # Budgie Budgeting App
-### [View App Here!](https://bslevin.github.io/budgie-budget-app/index.html)
+### [View App Here!](https://bslevin.github.io/budgie-budget-app/index.html){:target="_blank"}
 
 ## Objective
 
