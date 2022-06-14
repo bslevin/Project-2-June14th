@@ -51,7 +51,7 @@ Goals:
 
 Homepage Desktop
 
-![Homepage Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/img/budgieHomepage.png)
+![Homepage Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budgieHomepage.png)
 
 
 Homepage Mobile
@@ -64,7 +64,7 @@ About page Desktop
 ![About Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budgieAbout.png)
 
 
-About page Desktop
+About page Mobile
 
 ![About Mobile](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budgieAboutMobile.png)
 
