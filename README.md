@@ -120,11 +120,33 @@ Budget App Mobile
    * font-family: 'Courgette', sans-serif used throughout this project.
 
 * Bootstrap
-   * Main Framework directed used for front-end web development.
+   * Main Framework used for CSS.
 
 
 ## Testing
 
+Testing of HTML, CSS and JS was done using the below validators:
+
+JavaScript [JavaScript](https://jshint.com/)
+HTML HTML [HTML](https://validator.w3.org/#validate_by_input)
+CSS [CSS](https://validator.w3.org/#validate_by_input)
+
+Result: All passed with no errors.
+
+Index.html
+![Index](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/home.png)
+
+About.html
+![About](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/about.png)
+
+Budget.html
+![Budget](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budget.png)
+
+CSS
+![Homepage Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/css.png)
+
+JS
+![Homepage Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/jshint.png)
 
 #### Test Cases
 
