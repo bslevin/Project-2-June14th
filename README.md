@@ -1,4 +1,5 @@
 # Budgie Budgeting App
+### [View App Here!](https://bslevin.github.io/budgie-budget-app/index.html)
 
 ## Objective
 
@@ -37,19 +38,71 @@ To create a web app that is user-friendly, enjoyable and useful.
 
 ## UX & Design
 
-### Strategy Plane
+Goals:
 
-The Budgie budget app was created ....
+* Demonstrate acquired knowledge with HTML, CSS and JavaScript.
+* Give website users an interactive, useful budget app experience.
+* Create a web app that will make the user want to return to the website and recommend it to others.
+
+### User Stories
+
+As a user, I want to:
+* 1. Understand the purpose of the site on landing.
+* 2. Be able to navigate the website without any issue.
+* 3. Be able to use the budget app component.
+
+User Story (1):
+
+***"Understand the purpose of the site on landing."***
+
+Criteria:
+* Website states its objective immediately on landing without much effort for the user.
+
+Observed:
+* With the help of a call out message and description. It is clear what the purpose and intention of the web app is.  
+
+Result: Pass
+
+User Story (2):
+
+***"Be able to navigate the website without any issue."***
+
+Criteria:
+* Website is easy to use and all links to different pages work as expected. The path taken is intuitive.
+
+Observed:
+* The minimalist look and feel of the web app makes the journey very easy. All links are working and labelled correctly to use the main site objective.    
+
+Result: Pass
+
+User Story (3):
+
+***"Be able to use the budget app component."***
+
+Criteria:
+* Website budget tool should work as expected.
+
+Observed:
+* Able to add a total budget amount.
+* Able to add an individual expense name.
+* Able to add an individual expense amount.
+* Able to edit an individual expense name.
+* Able to edit an individual expense amount.
+* Able to delete an individual expense.
+* Able to delete all expenses.
+* Got a visual display of Total budget amount, Total expense amount and Total balance.
+* Got a visual display of the percentage (%) of each expense as part of the total budget.
+
+Result: Pass
+
+
+### Strategy Plane
 
 Goals:
 
 * Showcase knowledge acquired in HTML, CSS and JavaScript.
 * Give website users an interactive experience and useful budget tool.
 * Create an App that will make its users want to return on multiple visits. 
-
-#### User Stories
-
-* As a user, I want to:
 
 
 ### Skeleton Plane 
@@ -130,6 +183,10 @@ Budget App Mobile
    * Main Framework used for CSS.
 
 
+### Defensive programming measures
+
+* Added if/else conditions on all form input to check for positive, not null values before accepting any data.
+
 ## Testing
 
 Testing of HTML, CSS and JS was done using the below validators:
@@ -155,7 +212,6 @@ CSS
 JS
 ![JS](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/jshint.PNG)
 
-#### Test Cases
 
 
 
@@ -180,6 +236,12 @@ Colour scheme for the website was designed to be subtle with accents of Lime Gre
 #### Typography
 * font-family: 'Courgette', sans-serif; imported from Google Fonts used throughout.
 
+
+## Bugs
+
+* There was an issue where the JS eventlistener for page load was not working. I discovered on stack overflow that the 'document.load' could be unrealiable.
+It was recommended to use 'window.load' instead.
+Outcome: Issue resloved.
 
 ### Structure Plane
 
