@@ -270,3 +270,5 @@ Images were open source.
 
 * :heart: MDP [MDP](https://mdbootstrap.com/)
 * :heart: Coding Addict [Coding Addict](https://www.youtube.com/codingaddict)
+
+Thank you to my mentor, CI community and everyone who helped along the way :heart
