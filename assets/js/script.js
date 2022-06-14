@@ -37,16 +37,16 @@ class BudgetApp {
           // modify variable so that setTimeout func points to the class and not global window object
           const point = this;
           setTimeout(function() {
-            point.budgetFeedbackFail.classList.remove('showItem')
-          }, 3000)
+            point.budgetFeedbackFail.classList.remove('showItem');
+          }, 3000);
         }
         else {
             this.budgetFeedbackSuccess.classList.add("showItem");
             this.budgetFeedbackSuccess.innerHTML = `<p>Successfully added budget amount!</p>`;
             const point = this;
             setTimeout(function() {
-              point.budgetFeedbackSuccess.classList.remove('showItem')
-            }, 3000)
+              point.budgetFeedbackSuccess.classList.remove('showItem');
+            }, 3000);
             this.budgetAppAmount.textContent = value;
             this.budgetAppInput.value = '';
             this.showBalance();
@@ -59,15 +59,15 @@ class BudgetApp {
         this.budgetBalanceAmount.textContent = total;
         if (total < 0) {
           this.balance.classList.remove('showGreen', 'showBlack');
-          this.balance.classList.add('showRed')
+          this.balance.classList.add('showRed');
         }
         else if (total > 0) {
           this.balance.classList.remove('showGreen', 'showBlack');
-          this.balance.classList.add('showGreen')
+          this.balance.classList.add('showGreen');
         }
         else if (total === 0) {
           this.balance.classList.remove('showGreen', 'showRed');
-          this.balance.classList.add('showBlack')
+          this.balance.classList.add('showBlack');
         }
     }
     // Method to submit the expense properties
@@ -80,7 +80,7 @@ class BudgetApp {
             const point = this;
             setTimeout(function() {
             point.expenseFeedbackFail.classList.remove('showItem');
-            }, 3000)
+            }, 3000);
         }
         else {
             this.expenseFeedbackSuccess.classList.add('showItem');
@@ -90,16 +90,16 @@ class BudgetApp {
             const point = this;
             setTimeout(function() {
             point.expenseFeedbackSuccess.classList.remove('showItem');
-            }, 3000)
+            }, 3000);
     
             this.budgetExpenseInput.value = "";
             this.budgetAmountInput.value = "";
             
             const divisor = parseInt(this.budgetAppAmount.textContent);
             const remainder = parseInt(expenseAmount);
-            let percent = 0
+            let percent = 0;
             if (divisor > 0) {
-                percent = remainder/divisor*100
+                percent = remainder/divisor*100;
             } 
             else {
                 percent = "";
@@ -140,7 +140,7 @@ class BudgetApp {
     totalBudgetExpense() {
         let total = 0;
         if (this.budgetItemList.length > 0) {
-            total = this.budgetItemList.reduce((sum, li) => sum + li.expenseValue, 0)
+            total = this.budgetItemList.reduce((sum, li) => sum + li.expenseValue, 0);
         }
         this.expenseAmount.textContent = total;
         return total;
@@ -169,7 +169,7 @@ class BudgetApp {
         const point = this;
         setTimeout(function() {
           point.expenseFeedbackSuccess.classList.remove('showItem');
-        }, 3000)
+        }, 3000);
         let id = parseInt(element.dataset.id);
         let parentEl = element.parentElement.parentElement.parentElement;
         this.budgetExpenseList.removeChild(parentEl);
@@ -191,20 +191,20 @@ function budgetAppEventListeners() {
     const budgetExpenseList = document.getElementById("expense-list");
 
     // create new instance of BudgetApp class
-    const ba = new BudgetApp()
+    const ba = new BudgetApp();
 
     // create submit event listener on the selected objects
     budgetAppForm.addEventListener('submit', function(event){
         // stop default submit from happening on load
         event.preventDefault();
         ba.addBudgetAmount();
-    })
+    });
     // create submit event listener on the selected objects
     budgetExpenseForm.addEventListener('submit', function(event){
         // stop submit from happening on load
         event.preventDefault();
         ba.addExpenseForm();
-    })
+    });
     // create click event listener on the selected objects
     budgetExpenseList.addEventListener('click', function(event){
         if (event.target.classList.contains('edit-icon')) {
@@ -220,6 +220,6 @@ function budgetAppEventListeners() {
 when all DOM elements have loaded */
 window.addEventListener('DOMContentLoaded', function(){
     budgetAppEventListeners();
-})
+});
 
 /*Use and Credit for code used in this project goes to Coding Addict [Coding Addict](https://www.youtube.com/codingaddict) - John Smilga */
