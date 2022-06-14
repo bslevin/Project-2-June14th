@@ -143,10 +143,10 @@ Budget.html
 ![Budget](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/budget.png)
 
 CSS
-![Homepage Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/css.png)
+![CSS](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/css.png)
 
 JS
-![Homepage Desktop](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/jshint.png)
+![JS](https://github.com/bslevin/budgie-budget-app/blob/main/assets/wireframe/jshint.PNG)
 
 #### Test Cases
 
